@@ -72,6 +72,11 @@ export const sidebarItems = (role: string) => {
       icon: <CarOutlined />,
       key: `/${role}/driver`,
     },
+    {
+      label: <Link href={`/${role}/user`}>User</Link>,
+      icon: <CarOutlined />,
+      key: `/${role}/user`,
+    },
 
     {
       label: <Link href={`/${role}/trip`}>Trip</Link>,
@@ -115,9 +120,9 @@ export const sidebarItems = (role: string) => {
     },
 
     {
-      label: <Link href={`/${role}/inventoryRequest`}>Inventory Request</Link>,
+      label: <Link href={`/${role}/manageRequest`}>Manage Request</Link>,
       icon: <SubnodeOutlined />,
-      key: `/${role}/inventoryRequest`,
+      key: `/${role}/manageRequest`,
     },
     {
       label: <Link href={`/${role}/report`}>Report</Link>,
@@ -140,8 +145,8 @@ export const sidebarItems = (role: string) => {
       icon: <ScheduleOutlined />,
       children: [
         {
-          label: <Link href={`/${role}/upcomingTrip`}>Upcoming Trip</Link>,
-          key: "upcomingTrip",
+          label: <Link href={`/${role}/upComingTrip`}>Upcoming Trip</Link>,
+          key: "upComingTrip",
         },
         {
           label: <Link href={`/${role}/tripHistory`}>Trip History</Link>,

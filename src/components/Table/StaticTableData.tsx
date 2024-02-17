@@ -32,7 +32,7 @@ export const vehiclesFields = [
 export const tripCostFields = [
   {
     id: 1,
-    fields: "Passenger Name",
+    fields: "Trip Holder Name",
   },
   {
     id: 2,
@@ -82,6 +82,25 @@ export const driverSalaryFields = [
   },
   {
     id: 6,
+    fields: "Action",
+  },
+];
+
+export const officeCostFields = [
+  {
+    id: 1,
+    fields: "Cost Title",
+  },
+  {
+    id: 2,
+    fields: "Amount",
+  },
+  {
+    id: 3,
+    fields: "Created Date",
+  },
+  {
+    id: 4,
     fields: "Action",
   },
 ];
@@ -243,12 +262,45 @@ export const vehicles = [
     fuelType: "Diesel",
   },
 ];
+export const InventoryRequestListTableFields = [
+  {
+    id: 0,
+    fields: 'No'
+  },
+  {
+    id: 1,
+    fields: "Title",
+  },
+  {
+    id: 1,
+    fields: "Status",
+  },
+  {
+    id: 2,
+    fields: "Action",
+  },
+];
+export const InventoryListTableFields = [
+  {
+    id: 0,
+    fields: "Name",
+  },
+  {
+    id: 1,
+    fields: "Description",
+  },
+  {
+    id: 2,
+    fields: "Quantity",
+  },
+];
 
 export const DriverListTableFields = [
   {
     id: 0,
     fields: "Photo",
   },
+
   {
     id: 1,
     fields: "Name",
@@ -258,21 +310,62 @@ export const DriverListTableFields = [
     fields: "Phone",
   },
   {
-    id: 5,
+    id: 3,
     fields: "License No",
   },
   {
     id: 4,
-    fields: "Experience",
+    fields: "Experince",
   },
   {
-    id: 6,
-    fields: "NID No.",
+    id: 5,
+    fields: "NID",
   },
   {
-    id: 7,
+    id: 5,
     fields: "Actions",
-  } 
+  },
+];
+
+export const ManageRoleListTableFields = [
+  {
+    id: 0,
+    fields: "Name",
+  },
+
+
+  {
+    id: 2,
+    fields: "Phone",
+  },
+  {
+    id: 3,
+    fields: "Role",
+  },
+  {
+    id: 4,
+    fields: "Location",
+  },
+];
+
+export const ManageRequestTableFields = [
+  {
+    id: 0,
+    fields: "Inventory Reference",
+  },
+  {
+    id: 1,
+    fields: 'Title'
+  },
+  {
+    id: 2,
+    fields: 'Comments'
+  },
+  {
+    id: 3,
+    fields: "Aprove Status",
+  }
+
 ];
 
 export const vehicleDriversList = [
@@ -351,12 +444,12 @@ export const tripFields = [
   {
     id: 2,
     fields: "Trip Date",
-  }, 
+  },
   {
     id: 3,
     fields: "Passenger Name",
   },
-   {
+  {
     id: 4,
     fields: "Passengers",
   },
@@ -367,17 +460,17 @@ export const tripFields = [
   {
     id: 6,
     fields: "Trip Rent",
-  },{
+  }, {
     id: 7,
     fields: "Driver",
-  },{
+  }, {
     id: 8,
     fields: "Vehicle",
-  }, 
+  },
   {
     id: 9,
     fields: "Status",
-  }, 
+  },
   {
     id: 10,
     fields: "Actions",
