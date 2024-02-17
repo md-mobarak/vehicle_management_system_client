@@ -90,7 +90,7 @@ const UpcomingTripTable = () => {
   return (
     <>
       <Heading>
-        <p>Upcoming Trip </p>
+        <p>Upcoming Trip</p>
       </Heading>
       <div className="overflow-x-auto rounded-tl-xl rounded-tr-xl">
         <div
